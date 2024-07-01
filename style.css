@@ -1,0 +1,118 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark grey background */
+    color: #ddd; /* Lighter text for contrast */
+}
+
+header, nav, footer {
+    background-color: #444; /* Slightly lighter shade for header, nav, and footer */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between logo, heading, and button */
+    align-items: center; /* Ensures vertical alignment */
+    padding: 20px; /* Adds some space around the header content */
+}
+
+.github-button-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    align-items: center;
+}
+
+.btn-primary {
+    /* Styles from CSS3 GitHub Buttons library */
+    background-color: #24292e;
+    border-radius:.25em;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    line-height: 2.5;
+    padding:.6em 1em;
+    text-decoration: none;
+    transition: background-color.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #760f84;
+}
+
+.github-img {
+    width: 24px; /* Set desired width */
+    height: 24px; /* Set desired height, maintaining aspect ratio */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px; /* Adjust based on your preference */
+}
+
+.heading-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allows the text container to take up the remaining space */
+}
+
+h1 {
+    color: #8f00c7; /* purple for headings */
+}
+h2 {
+    font-weight: 1000;
+    font-size: 30px;
+    color: #963dba; 
+}
+h3 {
+    font-weight:  900;
+    color: #8f719b; 
+}
+h4 {
+    color: #8f719b; 
+}
+h5 {
+    color: #8f719b; 
+}
+
+.text-container {
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100px; /* Adjust based on your preference */
+    height: auto; /* Keeps aspect ratio */
+}
+
+footer {
+    background-color: #444; /* Same as your header and nav for consistency */
+    color:#8f00c7;
+    padding: 20px; /* Space around the footer content */
+    text-align: center; /* Center the content */
+}
+
+.footer-content ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.footer-content ul li {
+    display: inline-block; /* Display list items side by side */
+    margin-right: 10px; /* Space between list items */
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0; /* Remove right margin from last item */
+}
