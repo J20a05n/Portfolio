@@ -19,10 +19,20 @@ header {
     padding: 20px; /* Adds some space around the header content */
 }
 
+a:visited {
+    color: #ff69b4; /* A light pink color */
+}
+
+a {
+    color: #007bff; /* Bright blue for unvisited links */
+}
+
 .github-button-container {
     display: flex;
     justify-content: flex-end; /* Aligns the button to the right */
     align-items: center;
+    background-color: #343434; 
+    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
 }
 
 .btn-primary {
@@ -68,6 +78,8 @@ h2 {
     font-weight: 1000;
     font-size: 30px;
     color: #963dba; 
+    background-color: #343434; 
+    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
 }
 h3 {
     font-weight:  900;
@@ -82,6 +94,7 @@ h5 {
 
 .text-container {
     text-align: center;
+    
 }
 
 .logo-container {
@@ -94,6 +107,27 @@ h5 {
     max-width: 100px; /* Adjust based on your preference */
     height: auto; /* Keeps aspect ratio */
 }
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #343434; 
+    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
+}
+
+.project img {
+    max-width: 150px; /* Adjust based on your preference */
+    height: auto; /* Keeps aspect ratio */
+    margin-right: 20px; /* Adds some space between the image and the text */
+}
+
+.project.project-description {
+    flex-grow: 1; /* Allows the description to take up the remaining space */
+    text-align: left; /* Aligns the text to the left */
+}
+
 
 footer {
     background-color: #444; /* Same as your header and nav for consistency */
