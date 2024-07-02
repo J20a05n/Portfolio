@@ -1,10 +1,9 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Dark grey background */
-    color: #ddd; /* Lighter text for contrast */
+    background-color: #333;
+    color: #ddd;
 }
 
 header, nav, footer {
@@ -20,7 +19,7 @@ header {
 }
 
 a:visited {
-    color: #ff69b4; /* A light pink color */
+    color: #ff69b4; /* Bright pink for visited links */
 }
 
 a {
@@ -61,7 +60,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100px; /* Adjust based on your preference */
+    max-width: 100px;
 }
 
 .heading-text-container {
@@ -94,7 +93,6 @@ h5 {
 
 .text-container {
     text-align: center;
-    
 }
 
 .logo-container {
@@ -104,7 +102,7 @@ h5 {
 }
 
 .logo-container img {
-    max-width: 100px; /* Adjust based on your preference */
+    max-width: 100px;
     height: auto; /* Keeps aspect ratio */
 }
 
@@ -118,7 +116,8 @@ h5 {
 }
 
 .project img {
-    max-width: 150px; /* Adjust based on your preference */
+    min-width: 150px;
+    max-width: 150px;
     height: auto; /* Keeps aspect ratio */
     margin-right: 20px; /* Adds some space between the image and the text */
 }
@@ -130,7 +129,7 @@ h5 {
 
 
 footer {
-    background-color: #444; /* Same as your header and nav for consistency */
+    background-color: #444; /* Same as the header and nav for consistency */
     color:#8f00c7;
     padding: 20px; /* Space around the footer content */
     text-align: center; /* Center the content */
