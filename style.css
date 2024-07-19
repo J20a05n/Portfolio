@@ -149,3 +149,28 @@ footer {
 .footer-content ul li:last-child {
     margin-right: 0; /* Remove right margin from last item */
 }
+
+details {
+    margin-bottom: 20px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+summary {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 30px;
+    color: #963dba; 
+    background-color: #343434; 
+    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
+}
