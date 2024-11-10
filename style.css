@@ -6,6 +6,17 @@ body {
     color: #ddd;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #222222 0%, #444 100%);
+    z-index: -1;
+}
+
 header, nav, footer {
     background-color: #444; /* Slightly lighter shade for header, nav, and footer */
 }
@@ -91,6 +102,18 @@ h5 {
     color: #8f719b; 
 }
 
+/* Style the section containers */
+.section-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgb(171, 131, 179); /* adds a subtle shadow */
+}
+
+
+
 .text-container {
     text-align: center;
 }
@@ -104,6 +127,13 @@ h5 {
 .logo-container img {
     max-width: 100px;
     height: auto; /* Keeps aspect ratio */
+}
+
+.position-image,
+.education-image {
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
 }
 
 .project {
@@ -129,25 +159,32 @@ h5 {
 
 
 footer {
-    background-color: #444; /* Same as the header and nav for consistency */
-    color:#8f00c7;
-    padding: 20px; /* Space around the footer content */
-    text-align: center; /* Center the content */
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .footer-content ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Removes default margin */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-content ul li {
-    display: inline-block; /* Display list items side by side */
-    margin-right: 10px; /* Space between list items */
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .footer-content ul li:last-child {
-    margin-right: 0; /* Remove right margin from last item */
+    margin-right: 0;
 }
 
 details {
@@ -172,6 +209,7 @@ summary {
     font-size: 30px;
     color: #963dba; 
     background-color: #343434; 
+    border-radius: 15px;
     box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
 }
 
@@ -180,6 +218,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 50px 0; /* Add some vertical padding */
+    
 }
 
 .error-container {
