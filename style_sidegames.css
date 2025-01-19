@@ -58,6 +58,8 @@ header, footer {
     width: auto;
 }
 
+
+
 .footer-content {
     display: flex;
     justify-content: center;
@@ -80,4 +82,12 @@ header, footer {
 
 .youtube-link-btn:hover {
     background-color: darkred; /* Darker shade of red on hover */
+}
+
+a:visited {
+    color: #ff69b4; /* Bright pink for visited links */
+}
+
+a {
+    color: #007bff; /* Bright blue for unvisited links */
 }
