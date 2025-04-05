@@ -45,23 +45,6 @@ a {
     box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
 }
 
-.btn-primary {
-    /* Styles from CSS3 GitHub Buttons library */
-    background-color: #24292e;
-    border-radius:.25em;
-    color: white;
-    display: flex;
-    font-size: 14px;
-    line-height: 2.5;
-    padding:.6em 1em;
-    text-decoration: none;
-    transition: background-color.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #760f84;
-}
-
 .github-img {
     width: 24px; /* Set desired width */
     height: 24px; /* Set desired height, maintaining aspect ratio */
@@ -112,8 +95,6 @@ h5 {
     box-shadow: 0 4px 10px rgb(171, 131, 179); /* adds a subtle shadow */
 }
 
-
-
 .text-container {
     text-align: center;
 }
@@ -141,22 +122,80 @@ h5 {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #343434; 
-    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
+    background-color: #343434;
+    box-shadow: 0 1px 10px rgb(64, 1, 76);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgb(64, 1, 76);
 }
 
 .project img {
     min-width: 150px;
     max-width: 150px;
-    height: auto; /* Keeps aspect ratio */
-    margin-right: 20px; /* Adds some space between the image and the text */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project.project-description {
-    flex-grow: 1; /* Allows the description to take up the remaining space */
-    text-align: left; /* Aligns the text to the left */
+.project-description {
+    flex-grow: 1;
+    text-align: left;
+    padding-right: 20px;
 }
 
+.back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #760f84;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(118, 15, 132, 0.3);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #8f00c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(118, 15, 132, 0.4);
+}
+
+.projects-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #760f84;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(118, 15, 132, 0.3);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.projects-button:hover {
+    background-color: #8f00c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(118, 15, 132, 0.4);
+}
+
+.back-button:visited,
+.projects-button:visited {
+    color: white !important;
+    text-decoration: none !important;
+}
 
 footer {
     background-color: rgba(68, 68, 68, 0.8);
@@ -203,14 +242,21 @@ summary::before {
 
 summary {
     text-align: center;
-    font-weight: bold;
-    cursor: pointer;
     font-weight: 1000;
     font-size: 30px;
-    color: #963dba; 
-    background-color: #343434; 
+    color: #963dba;
+    background-color: #343434;
     border-radius: 15px;
-    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
+    box-shadow: 0 1px 10px rgb(64, 1, 76);
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+
+summary:hover {
+    background-color: #461a4c;
+    opacity: 75%;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 12px rgb(118, 15, 132);
 }
 
 main {
@@ -239,13 +285,20 @@ main {
 }
 
 .btn-primary {
-    padding: 10px; /* Remove default padding */
-    text-align: center; /* Center the text horizontally */
-    display: inline-flex; /* Allow for vertical centering */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    width: auto; /* Allow the button to expand to fit its content */
-    box-shadow: 0 1px 10px rgb(64, 1, 76); /* adds a subtle shadow */
+    padding:.6em 1em;
+    border-radius:.25em;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    line-height: 2.5;
+    padding:.6em 1em;
+    text-decoration: none;
+    transition: background-color.3s ease;
+}
+
+a.btn-primary:visited {
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .btn-primary:hover {
