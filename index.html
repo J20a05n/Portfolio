@@ -3,43 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jan Philipp Kleinschmidt´s Portfolio. Have a look at my skills, work experience and projects I have worked on so far">
-    <title>JPK</title>
+    <meta name="description" content="Jan Philipp Kleinschmidt's professional portfolio showcasing skills in Wirtschaftsinformatik, programming (C#, Java, Python), and 3D design. Explore my education, work experience, and projects.">
+    <meta name="keywords" content="Jan Philipp Kleinschmidt, Wirtschaftsinformatik, C# developer, Java programmer, Python developer, 3D design, FHDW, OBI Services, portfolio">
+    <meta name="author" content="Jan Philipp Kleinschmidt">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Jan Philipp Kleinschmidt - Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing my skills in programming, 3D design, and Wirtschaftsinformatik studies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://janphilippkleinschmidt.com">
+    <meta property="og:image" content="https://janphilippkleinschmidt.com/assets/jpk_logo.webp">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jan Philipp Kleinschmidt - Wirtschaftsinformatik Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing my skills in programming, 3D design, and Wirtschaftsinformatik studies.">
+    <meta name="twitter:image" content="https://janphilippkleinschmidt.com/assets/jpk_logo.webp">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://janphilippkleinschmidt.com">
+    
+    <!-- Favicon Setup -->
+    <link rel="icon" type="image/webp" href="assets/jpk_logo.webp">
+    <link rel="apple-touch-icon" href="assets/jpk_logo.webp">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jan Philipp Kleinschmidt",
+      "url": "https://janphilippkleinschmidt.com",
+      "description": "Wirtschaftsinformatik student at FHDW with skills in programming and webdesign",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "FHDW - University of Applied Sciences"
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Bachelor Student",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "OBI Services GmbH"
+        }
+      },
+      "sameAs": [
+        "https://github.com/J20a05n",
+        "https://linkedin.com/in/Jan-Philipp-Kleinschmidt"
+      ]
+    }
+    </script>
+    
+    <title>Jan Philipp Kleinschmidt | Wirtschaftsinformatik Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/webp" href="assets\jpk_logo.webp">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <a href="./">
-                <img src="assets\jpk_logo.webp" alt="Portfolio Logo" />
+            <a href="./" aria-label="Home">
+                <img src="assets/jpk_logo.webp" alt="Jan Philipp Kleinschmidt Portfolio Logo" width="100" height="100"/>
             </a>
         </div>
         <div class="heading-text-container">
             <h1>Jan Philipp Kleinschmidt</h1>
+            <p class="tagline">Wirtschaftsinformatik Student | Programmer | 3D Designer</p>
         </div>
         <div class="github-button-container">
-            <a href="https://github.com/J20a05n" class="btn btn-primary github-btn">
-                <img src="assets\github-logo.webp" alt="GitHub Repository" class="github-img" />
+            <a href="https://github.com/J20a05n" class="btn btn-primary github-btn" aria-label="GitHub Profile">
+                <img src="assets/github-logo.webp" alt="GitHub Repository" class="github-img" width="32" height="32"/>
             </a>
         </div>
     </header>
+    
+    <!-- Rest of your content remains the same -->
     <nav>
         <!-- Navigation links for later -->
     </nav>
     <section id="current-occupation">
         <div class="section-container">
             <details open>
-                <summary>Current Occupation</summary>
+                <summary><h2>Current Occupation</h2></summary>
                 <div class="text-container">
                     <div class="position-container">
-                        <img src="assets/obi_logo.webp" alt="OBI Services GmbH Logo" class="position-image">
+                        <img src="assets/obi_logo.webp" alt="OBI Services GmbH Logo" class="position-image" width="80" height="80">
                         <h3>October 2024 - Today</h3>
                         <h4>OBI Services GmbH</h4>
                         <h5>Bachelor Student</h5>
                     </div>
                     <div class="education-container">
-                        <img src="assets/fhdw_logo.webp" alt="FHDW University Logo" class="education-image">
+                        <img src="assets/fhdw_logo.webp" alt="FHDW University Logo" class="education-image" width="80" height="80">
                         <h3>October 2024 - Today</h3>
                         <h4>FHDW - University of Applied Sciences</h4>
                         <h5>Pursuing a Bachelor of Science, Wirtschaftsinformatik</h5>
@@ -48,10 +100,10 @@
             </details>
         </div>
     </section>    
-    <section id="work experience">
+    <section id="work-experience">
         <div class="section-container">
             <details>
-                <summary>Work Experience</summary>
+                <summary><h2>Work Experience</h2></summary>
                 <div class="text-container">
                     <h3>November 2022 - September 2024</h3>
                     <h4>Edeka</h4>
@@ -65,10 +117,10 @@
             </details>
         </div>
     </section>
-    <section id="Education">
+    <section id="education">
         <div class="section-container">
             <details>
-                <summary>Education</summary>
+                <summary><h2>Education</h2></summary>
                 <div class="text-container">
                     <h3>2015 - 2024</h3>
                     <h4>Albertus Magnus Gymnasium Bensberg</h4>
@@ -77,10 +129,10 @@
             </details>
         </div>
     </section>
-    <section id="Electronical data processing skills">
+    <section id="technical-skills">
         <div class="section-container">
             <details>
-                <summary>Electronic data processing skills</summary>
+                <summary><h2>Technical Skills</h2></summary>
                 <div class="text-container">
                     <h3>Programming Languages:</h3>
                     <h4>C# 
@@ -103,12 +155,12 @@
             </details>
         </div>
     </section>
-    <section id="Miscellaneous">
+    <section id="miscellaneous">
         <div class="section-container">
             <details>
-                <summary>Miscellaneous</summary>
+                <summary><h2>Miscellaneous</h2></summary>
                 <div class="text-container">
-                    <h3>3D - Design and 3D Printing </h3>
+                    <h3>3D Design and 3D Printing</h3>
                 </div>
             </details>
         </div>
@@ -118,7 +170,7 @@
     </div>
     <footer>
         <div class="footer-content">
-            <h1>Get in touch with me:</h1>
+            <h2>Get in touch with me:</h2>
             <ul>
                 <li><a href="mailto:mail@janphilippkleinschmidt.com">Email: mail@janphilippkleinschmidt.com</a></li>
                 <li><a href="https://linkedin.com/in/Jan-Philipp-Kleinschmidt">LinkedIn: Jan Philipp Kleinschmidt</a></li>
