@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jan Philipp Kleinschmidt's professional portfolio showcasing skills in Wirtschaftsinformatik, programming (C#, Java, Python), and 3D design. Explore my education, work experience, and projects.">
-    <meta name="keywords" content="Jan Philipp Kleinschmidt, Wirtschaftsinformatik, C# developer, Java programmer, Python developer, 3D design, FHDW, OBI Services, portfolio">
+    <meta name="description" content="Jan Philipp Kleinschmidt's professional portfolio showcasing skills in Wirtschaftsinformatik, programming, and 3D design.">
+    <meta name="keywords" content="Jan Philipp Kleinschmidt, Wirtschaftsinformatik, C#, Java, Python, 3D design, FHDW, OBI Services">
     <meta name="author" content="Jan Philipp Kleinschmidt">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Jan Philipp Kleinschmidt - Portfolio">
-    <meta property="og:description" content="Professional portfolio showcasing my skills in programming, 3D design, and Wirtschaftsinformatik studies.">
+    <meta property="og:description" content="Professional portfolio showcasing skills in programming, Game design, and Wirtschaftsinformatik studies.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://janphilippkleinschmidt.com">
     <meta property="og:image" content="https://janphilippkleinschmidt.com/assets/jpk_logo.webp">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jan Philipp Kleinschmidt - Wirtschaftsinformatik Portfolio">
-    <meta name="twitter:description" content="Professional portfolio showcasing my skills in programming, 3D design, and Wirtschaftsinformatik studies.">
+    <meta name="twitter:title" content="Jan Philipp Kleinschmidt - Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing skills in programming, Game design, and Wirtschaftsinformatik studies.">
     <meta name="twitter:image" content="https://janphilippkleinschmidt.com/assets/jpk_logo.webp">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.janphilippkleinschmidt.com">
     
-    <!-- Favicon Setup -->
+    <!-- Favicon -->
     <link rel="icon" type="image/webp" href="assets/jpk_logo.webp">
     <link rel="apple-touch-icon" href="assets/jpk_logo.webp">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>Jan Philipp Kleinschmidt | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -53,130 +59,477 @@
       ]
     }
     </script>
-    
-    <title>Jan Philipp Kleinschmidt | Wirtschaftsinformatik Portfolio</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="./" aria-label="Home">
-                <img src="assets/jpk_logo.webp" alt="Jan Philipp Kleinschmidt Portfolio Logo" width="100" height="100"/>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/jpk_logo.webp" alt="JPK Logo" width="50" height="50">
+                <span>Jan Philipp Kleinschmidt</span>
             </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
-        <div class="heading-text-container">
-            <h1>Jan Philipp Kleinschmidt</h1>
-            <p class="tagline">Wirtschaftsinformatik Student | Programmer | 3D Designer</p>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Jan Philipp Kleinschmidt</h1>
+            <p class="hero-subtitle">Wirtschaftsinformatik Student | Developer | Game Designer</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/J20a05n" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/Jan-Philipp-Kleinschmidt" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
-        <div class="github-button-container">
-            <a href="https://github.com/J20a05n" class="btn btn-primary github-btn" aria-label="GitHub Profile">
-                <img src="assets/github-logo.webp" alt="GitHub Repository" class="github-img" width="32" height="32"/>
-            </a>
+        <div class="scroll-prompt">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
     
-    <!-- Rest of your content remains the same -->
-    <nav>
-        <!-- Navigation links for later -->
-    </nav>
-    <section id="current-occupation">
-        <div class="section-container">
-            <details open>
-                <summary><h2>Current Occupation</h2></summary>
-                <div class="text-container">
-                    <div class="position-container">
-                        <img src="assets/obi_logo.webp" alt="OBI Services GmbH Logo" class="position-image" width="80" height="80">
-                        <h3>October 2024 - Today</h3>
-                        <h4>OBI Services GmbH</h4>
-                        <h5>Bachelor Student</h5>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/portfolio_picture.webp" alt="Jan Philipp Kleinschmidt" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <p>I'm a Wirtschaftsinformatik student at FHDW with a passion for creating innovative solutions through programming and design. My journey combines technical expertise with creative problem-solving to build meaningful projects and fun games.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>FHDW - University of Applied Sciences</p>
+                                <p>Bachelor of Science, Wirtschaftsinformatik</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h3>Current Position</h3>
+                                <p>OBI Services GmbH</p>
+                                <p>Bachelor Student</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="education-container">
-                        <img src="assets/fhdw_logo.webp" alt="FHDW University Logo" class="education-image" width="80" height="80">
-                        <h3>October 2024 - Today</h3>
-                        <h4>FHDW - University of Applied Sciences</h4>
-                        <h5>Pursuing a Bachelor of Science, Wirtschaftsinformatik</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="csharp">
+                            <div class="skill-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item" data-skill="java">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item" data-skill="python">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-skill="javascript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-skill="html">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item" data-skill="css">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS</span>
+                        </div>
                     </div>
                 </div>
-            </details>
-        </div>
-    </section>    
-    <section id="work-experience">
-        <div class="section-container">
-            <details>
-                <summary><h2>Work Experience</h2></summary>
-                <div class="text-container">
-                    <h3>November 2022 - September 2024</h3>
-                    <h4>Edeka</h4>
-                    <h5>Temporary worker in food retail</h5>
-                    <br>
-                    <h3>October 2021</h3>
-                    <h4>Miltenyi Biotec</h4>
-                    <h5>Internship at "Custom Solutions" introduction to CI/CD, C# /.Net, Devexpress XAF Blazor</h5>
-                    <br>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="unity">
+                            <div class="skill-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <span>Unity</span>
+                        </div>
+                        <div class="skill-item" data-skill="godot">
+                            <div class="skill-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <span>Godot</span>
+                        </div>
+                        <div class="skill-item" data-skill="git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item" data-skill="docker">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item" data-skill="nodejs">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span>NodeJs</span>
+                        </div>
+                        <div class="skill-item" data-skill="linux">
+                            <div class="skill-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-item" data-skill="vscode">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>VS-Code</span>
+                        </div>
+                        <div class="skill-item" data-skill="office">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-word"></i>
+                            </div>
+                            <span>Office</span>
+                        </div>
+                        <div class="skill-item" data-skill="adobe">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <span>Adobe Suite</span>
+                        </div>
+                        <div class="skill-item" data-skill="3d">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <span>3D Printing</span>
+                        </div>
+                        <div class="skill-item" data-skill="arduino">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <span>Arduino</span>
+                        </div>
+                    </div>
                 </div>
-            </details>
+            </div>
         </div>
     </section>
-    <section id="education">
-        <div class="section-container">
-            <details>
-                <summary><h2>Education</h2></summary>
-                <div class="text-container">
-                    <h3>2015 - 2024</h3>
-                    <h4>Albertus Magnus Gymnasium Bensberg</h4>
-                    <h5>Abitur</h5>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 7 -->
+                <div class="project-card" data-categories="web" data-skills="javascript,html,css,nodejs,git">
+                    <div class="project-image">
+                        <img src="assets/lieblings-wunschliste_logo.webp" alt="Lieblings Wunschliste">
+                    </div>
+                    <div class="project-content">
+                        <h3>Lieblings Wunschliste</h3>
+                        <p>A free online wishlist creator to share your wishes with friends and family. Completely free, with no registration required.</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="javascript">JavaScript</span>
+                            <span class="skill-badge" data-skill="html">HTML</span>
+                            <span class="skill-badge" data-skill="css">CSS</span>
+                            <span class="skill-badge" data-skill="nodejs">NodeJS</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.lieblings-wunschliste.de" target="_blank" class="project-link">Visit Site</a>
+                        </div>
+                    </div>
                 </div>
-            </details>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-categories="game" data-skills="godot,csharp,git">
+                    <div class="project-image">
+                        <img src="assets/move-on_logo.webp" alt="Move On Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>Move On</h3>
+                        <p>A 2D Platformer made for the 2025 Winter GameJam with theme "Nothing is permanent".</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="godot">Godot</span>
+                            <span class="skill-badge" data-skill="csharp">C#</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://j20a05n.itch.io/move-on" target="_blank" class="project-link">Play Game</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-categories="game" data-skills="csharp,unity,git">
+                    <div class="project-image">
+                        <img src="assets/obi_runner_logo.webp" alt="Beaver Runner Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>Beaver Runner</h3>
+                        <p>A 2D jump and run game referring to the "Biber Bonus Wochen 2024" marketing campaign.</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="unity">Unity</span>
+                            <span class="skill-badge" data-skill="csharp">C#</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://j20a05n.github.io/Beaver-Runner_WebGL-Build/" target="_blank" class="project-link">Play Game</a>
+                            <a href="https://github.com/J20a05n/Beaver-Runner_WebGL-Build" target="_blank" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-categories="web" data-skills="javascript,html,css,git">
+                    <div class="project-image">
+                        <img src="assets/side.games_logo.webp" alt="Side.Games">
+                    </div>
+                    <div class="project-content">
+                        <h3>Side.Games</h3>
+                        <p>A project and the "company" behind several games of different genres.</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="javascript">JavaScript</span>
+                            <span class="skill-badge" data-skill="html">HTML</span>
+                            <span class="skill-badge" data-skill="css">CSS</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sidegames.janphilippkleinschmidt.com" target="_blank" class="project-link">Visit Site</a>
+                            <a href="https://github.com/J20a05n/Side.Games-Website" target="_blank" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-categories="game" data-skills="csharp,unity,git">
+                    <div class="project-image">
+                        <img src="assets/choros_logo.webp" alt="Choros Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>Choros</h3>
+                        <p>A 2D action space shooter game where you fight off waves of enemies.</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="unity">Unity</span>
+                            <span class="skill-badge" data-skill="csharp">C#</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.Side.Games.Choros" target="_blank" class="project-link">Get on Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-categories="game" data-skills="csharp,unity,git">
+                    <div class="project-image">
+                        <img src="assets/sac_logo.webp" alt="S.A.C. Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>S.A.C.</h3>
+                        <p>You are a secret agent working to prevent a company from building a deadly weapon.</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="unity">Unity</span>
+                            <span class="skill-badge" data-skill="csharp">C#</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.Side.Games.S.A.C" target="_blank" class="project-link">Get on Google Play</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card" data-categories="game" data-skills="csharp,unity,git">
+                    <div class="project-image">
+                        <img src="assets/catadventure_logo.webp" alt="Cat Adventure Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cat Adventure</h3>
+                        <p>A run-and-gun platformer with over 30 levels across three different worlds, featuring challenging gameplay and a final bossfight..</p>
+                        <div class="project-skills">
+                            <span class="skill-badge" data-skill="unity">Unity</span>
+                            <span class="skill-badge" data-skill="csharp">C#</span>
+                            <span class="skill-badge" data-skill="git">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.Side.Games.CatAdventure" target="_blank" class="project-link">Get on Google Play</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
-    <section id="technical-skills">
-        <div class="section-container">
-            <details>
-                <summary><h2>Technical Skills</h2></summary>
-                <div class="text-container">
-                    <h3>Programming Languages:</h3>
-                    <h4>C# 
-                        <br> Java
-                        <br> Python
-                        <br> JavaScript
-                        <br> HTML
-                        <br> CSS
-                    </h4>
-                    <br>
-                    <h3>Other:</h3>
-                    <h4>Unity, Godot (GDScript)
-                        <br> Visual Studio
-                        <br> Git / Github
-                        <br> Linux / Ubuntu
-                        <br> MS / Libre - Office
-                        <br> Adobe Library (Photoshop, After Effects, Premiere Pro)
-                    </h4>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2024 - Present</div>
+                    <div class="timeline-content glass-card">
+                        <h3>OBI Services GmbH</h3>
+                        <h4>Bachelor Student</h4>
+                        <p>Currently working as a Bachelor student while pursuing my degree.</p>
+                    </div>
                 </div>
-            </details>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2024 - Present</div>
+                    <div class="timeline-content glass-card">
+                        <h3>FHDW - University of Applied Sciences</h3>
+                        <h4>Bachelor of Science, Wirtschaftsinformatik</h4>
+                        <p>Currently pursuing my degree in Wirtschaftsinformatik.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2022 - Sep 2024</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Edeka</h3>
+                        <h4>Temporary worker in food retail</h4>
+                        <p>Worked in various roles within the food retail sector.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2021</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Miltenyi Biotec</h3>
+                        <h4>Internship at "Custom Solutions"</h4>
+                        <p>Introduction to CI/CD, C#/.Net, Devexpress XAF Blazor.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2024</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Albertus Magnus Gymnasium Bensberg</h3>
+                        <h4>Abitur</h4>
+                        <p>Completed my high school education with Abitur.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="miscellaneous">
-        <div class="section-container">
-            <details>
-                <summary><h2>Miscellaneous</h2></summary>
-                <div class="text-container">
-                    <h3>3D Design and 3D Printing</h3>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mail@janphilippkleinschmidt.com">mail@janphilippkleinschmidt.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/Jan-Philipp-Kleinschmidt" target="_blank">Jan Philipp Kleinschmidt</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/J20a05n" target="_blank">J20a05n</a>
+                    </div>
                 </div>
-            </details>
+            </div>
         </div>
     </section>
-    <div class="text-container">
-        <a href="./projects" class="projects-button">View my Projects</a>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <h2>Get in touch with me:</h2>
-            <ul>
-                <li><a href="mailto:mail@janphilippkleinschmidt.com">Email: mail@janphilippkleinschmidt.com</a></li>
-                <li><a href="https://linkedin.com/in/Jan-Philipp-Kleinschmidt">LinkedIn: Jan Philipp Kleinschmidt</a></li>
-            </ul>
-            <h5> &copy; 2024 - <script>document.write(new Date().getFullYear())</script>, Jan Philipp Kleinschmidt.</h5>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/jpk_logo.webp" alt="JPK Logo" width="40" height="40">
+                    <span>Jan Philipp Kleinschmidt</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/J20a05n" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Jan-Philipp-Kleinschmidt" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Jan Philipp Kleinschmidt. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Console Easter Egg -->
+    <div id="console-container" class="console-hidden">
+        <div class="console-header">
+            <span>JPK Console</span>
+            <button id="console-close" aria-label="Close console">×</button>
+        </div>
+        <div id="console-output"></div>
+        <div class="console-input">
+            <span class="prompt">$</span>
+            <input type="text" id="console-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
