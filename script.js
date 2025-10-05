@@ -289,9 +289,9 @@ function processCommand(cmd) {
             const gameMap = {
                 'beaver-runner': 'https://j20a05n.github.io/Beaver-Runner_WebGL-Build/',
                 'move-on': 'https://j20a05n.itch.io/move-on',
-                'choros': 'https://play.google.com/store/apps/details?id=com.Side.Games.Choros',
-                'sac': 'https://play.google.com/store/apps/details?id=com.Side.Games.S.A.C',
-                'cat-adventure': 'https://play.google.com/store/apps/details?id=com.Side.Games.CatAdventure'
+                'choros': 'https://j20a05n.itch.io/choros',
+                'sac': 'https://j20a05n.itch.io/sac',
+                'cat-adventure': 'https://j20a05n.itch.io/cat-adventure'
             };
             
             const gameKey = params.toLowerCase().replace(/\s+/g, '-');
