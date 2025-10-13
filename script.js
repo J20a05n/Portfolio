@@ -37,6 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Current Year in Footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Email Obfuscation
+    const emailUser = 'mail';
+    const emailDomain = 'janphilippkleinschmidt.com';
+    const emailLink = document.getElementById('email-link');
+    if (emailLink) {
+        emailLink.href = 'mailto:' + emailUser + '@' + emailDomain;
+        emailLink.textContent = emailUser + '@' + emailDomain;
+    }
     
     // Projects Filter
     const filterBtns = document.querySelectorAll('.filter-btn');
@@ -251,7 +260,7 @@ function processCommand(cmd) {
             
         case 'contact':
             printToConsole('Contact Information:', 'info');
-            printToConsole('Email: mail@janphilippkleinschmidt.com');
+            printToConsole('Email: ' + 'mail' + '@' + 'janphilippkleinschmidt.com');
             printToConsole('LinkedIn: https://linkedin.com/in/Jan-Philipp-Kleinschmidt');
             printToConsole('GitHub: https://github.com/J20a05n');
             break;
